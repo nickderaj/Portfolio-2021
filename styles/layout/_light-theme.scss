@@ -1,0 +1,20 @@
+body[data-theme='light'] {
+  .skill-image {
+    filter: none !important;
+  }
+
+  .projects-card--technologies {
+    span {
+      color: var(--color-black) !important;
+    }
+  }
+
+  .card--body-light,
+  .projects-card--body {
+    background: var(--color-tertiary-light) !important;
+    color: var(--color-white) !important;
+  }
+  .about-image {
+    background-image: url('../../public/images/programmer-light.svg') !important;
+  }
+}

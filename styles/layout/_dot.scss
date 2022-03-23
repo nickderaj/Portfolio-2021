@@ -1,0 +1,30 @@
+.dot {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: pink;
+  border-radius: 50%;
+  display: inline-block;
+  z-index: 2;
+
+  &--red {
+    background-color: #ed695e;
+  }
+
+  &-close {
+    &:hover {
+      &::after {
+        content: 'X';
+        padding-left: 0.3rem;
+        color: var(--color-tertiary-dark);
+      }
+    }
+  }
+
+  &--yellow {
+    background-color: #f4bf50;
+  }
+
+  &--green {
+    background-color: #61c454;
+  }
+}

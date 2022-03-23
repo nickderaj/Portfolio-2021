@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+@import './base/base';
+@import './base/typography';
+
+@import './components/card';
+@import './components/socials';
+@import './components/modal';
+@import './components/theme-slider';
+@import './components/loader';
+
+@import './sections/home/about.scss';
+@import './sections/home/header.scss';
+@import './sections/home/projects';
+@import './sections/home/skills';
+@import './sections/home/experience';
+@import './sections/home/contact';
+
+@import 'layout/navigation';
+@import 'layout/dot';
+@import 'layout/footer';
+@import 'layout/light-theme';

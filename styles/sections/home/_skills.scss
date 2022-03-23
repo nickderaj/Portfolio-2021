@@ -1,0 +1,55 @@
+#skills {
+  background-color: var(--color-tertiary-light);
+  padding: 4rem 8rem;
+  // border-top: 2px solid var(--color-tertiary-light);
+  // border-bottom: 2px solid var(--color-tertiary-light);
+
+  @include respond(tab-land) {
+    padding: 4rem 2rem;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .container {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-tertiary  );
+    border-radius: 2rem;
+    width: 12rem;
+    height: 12rem;
+    margin: 1rem;
+    padding: 2rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.06);
+    }
+
+    &-image {
+      padding: 0.4rem;
+      height: 6rem;
+      width: 6rem;
+      filter: invert(100%);
+    }
+
+    &-text {
+      font-size: calc($default-font-size);
+      padding: 1rem 0 0 0;
+      margin: 0;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}

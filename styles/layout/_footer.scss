@@ -1,0 +1,17 @@
+#footer {
+  background: radial-gradient(var(--color-tertiary-dark), var(--color-tertiary));
+  height: calc($link-size * 3);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+
+  .social-links {
+    position: relative;
+    margin-bottom: calc($link-size);
+  }
+
+  .copyright {
+    font-size: calc($default-font-size * 0.7);
+  }
+}

@@ -1,0 +1,45 @@
+.github,
+.instagram,
+.twitter,
+.linkedin {
+  position: absolute;
+  height: $link-size;
+  width: $link-size;
+  transition: all 0.3s;
+  background-color: var(--color-white);
+  mask-size: cover;
+  mask-size: contain;
+
+  &:hover {
+    background-color: var(--color-primary);
+  }
+}
+
+.github {
+  right: calc($link-size * 1.75);
+  mask-image: url('../../public/icons/social/github.svg');
+  &:hover {
+    mask-image: url('../../public/icons/social/github.gif');
+  }
+}
+.twitter {
+  right: calc($link-size * 0.25);
+  mask-image: url('../../public/icons/social/twitter.svg');
+  &:hover {
+    mask-image: url('../../public/icons/social/twitter.gif');
+  }
+}
+.instagram {
+  left: calc($link-size * 0.25);
+  mask-image: url('../../public/icons/social/instagram.svg');
+  &:hover {
+    mask-image: url('../../public/icons/social/instagram.gif');
+  }
+}
+.linkedin {
+  left: calc($link-size * 1.75);
+  mask-image: url('../../public/icons/social/linkedin.svg');
+  &:hover {
+    mask-image: url('../../public/icons/social/linkedin.gif');
+  }
+}

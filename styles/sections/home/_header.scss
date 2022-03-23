@@ -1,0 +1,34 @@
+#header {
+  background: radial-gradient(var(--color-tertiary-dark), var(--color-tertiary));
+  min-height: 60rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+
+  .title {
+    width: 30rem;
+    text-transform: uppercase;
+
+    @include respond(phone) {
+      width: 35rem;
+      // padding: 0 6rem;
+    }
+
+    &-image {
+      margin: 2rem 0;
+      position: relative;
+      box-sizing: content-box;
+      border-radius: 50%;
+      background: var(--color-tertiary-light);
+
+      span {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+      }
+    }
+  }
+}

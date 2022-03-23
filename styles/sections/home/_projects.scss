@@ -1,0 +1,196 @@
+#projects {
+  background-color: var(--color-tertiary);
+  padding: 4rem 6rem;
+
+  @include respond(phone) {
+    padding: 4rem 2rem;
+  }
+
+  .title {
+    margin: 0 0 3rem;
+    text-align: center;
+  }
+
+  .projects {
+    &-github {
+      font-size: calc($default-font-size * 1.5);
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-bottom: 3rem;
+
+      &-icon {
+        margin-left: 1rem;
+        height: $link-size;
+        width: $link-size;
+
+        span {
+          position: absolute;
+          height: $link-size;
+          width: $link-size;
+          transition: all 0.3s;
+          background-color: var(--color-white);
+          mask-size: cover;
+          mask-size: contain;
+          mask-image: url('../../../public/icons/social/github.svg');
+
+          &:hover {
+            background-color: var(--color-primary);
+            mask-image: url('../../../public/icons/social/github.gif');
+          }
+        }
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      grid-gap: 4rem;
+      justify-content: center;
+
+      @include respond(tab-port) {
+        grid-gap: 4rem;
+      }
+    }
+
+    &-card {
+      display: flex;
+      flex-direction: column;
+      width: 30rem;
+      height: 42rem;
+      background: var(--color-tertiary);
+      color: var(--color-white);
+      border-radius: 12px;
+      align-items: center;
+      box-shadow: 0.2rem 0.2rem 0.6rem var(--color-tertiary-dark);
+      transition: all 0.2s ease-in;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 0.2rem 0.2rem 1.2rem var(--color-tertiary-dark);
+      }
+
+      &--technologies {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0.8rem 0;
+        background-color: var(--color-tertiary-dark);
+
+        span {
+          background-color: var(--color-primary);
+          padding: 0.6rem 1rem;
+          margin: 0.3rem 0.4rem;
+          color: var(--color-tertiary-dark);
+          border-radius: 1rem;
+          color: var(--color-black);
+          text-transform: uppercase;
+        }
+      }
+
+      &--body {
+        padding: 2rem;
+        width: 100%;
+        height: 20rem;
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+        background: var(--color-secondary-light);
+        color: var(--color-tertiary);
+
+        p {
+          padding: 1rem 0 0 0;
+          margin: 0;
+          font-size: calc($default-font-size * 1.2);
+        }
+      }
+
+      &--image {
+        border-radius: 12px 12px 0 0;
+        height: 20rem;
+        width: 100%;
+
+        img {
+          height: 20rem;
+          width: 100%;
+          object-fit: cover;
+          overflow: contain;
+          border-radius: 10px 10px 0 0;
+        }
+        // width: 100%;
+      }
+    }
+  }
+}
+
+.projects-modal {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  min-height: 50vh;
+  grid-gap: 4rem;
+
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
+
+  &-image {
+    width: 40rem;
+
+    @include respond(tab-land) {
+      height: 25rem;
+      width: 80%;
+    }
+
+    @include respond(phone) {
+      height: 25rem;
+      width: 100%;
+    }
+
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 0 0 2px var(--color-tertiary-dark);
+  }
+  &-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &-spacer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h4 {
+      border-bottom: 2px var(--color-tertiary-dark) solid;
+      font-size: calc($default-font-size * 1.8);
+    }
+
+    a {
+      position: absolute;
+      bottom: 2rem;
+      padding: 1.2rem 2rem;
+      border-radius: 10px;
+      background-color: var(--color-primary);
+      color: var(--color-black);
+      box-shadow: 0 0 0 2px var(--color-tertiary-dark);
+      margin: 0 auto;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        filter: brightness(1.08);
+      }
+
+      @include respond(tab-land) {
+        position: static;
+      }
+    }
+  }
+}

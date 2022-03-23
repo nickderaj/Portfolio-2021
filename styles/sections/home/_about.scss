@@ -1,0 +1,101 @@
+#about {
+  background-color: var(--color-tertiary-light);
+  padding: 4rem 6rem;
+
+  @include respond(phone) {
+    padding: 4rem 2rem;
+  }
+
+  .about {
+    &-wrapper {
+      margin: 0 6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      grid-gap: 5rem;
+
+      @include respond(tab-land) {
+        grid-gap: 1rem;
+        margin: 0;
+        flex-direction: column;
+      }
+    }
+
+    &-image {
+      margin-top: 4rem;
+      height: 30rem;
+      width: 90rem;
+      transition: all 0.3s;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      right: calc($link-size * 1.75);
+      background-image: url('../../../public/images/programmer-dark.svg');
+
+      @include respond(tab-land) {
+        margin: 3rem;
+        height: 30rem;
+        width: 40rem;
+      }
+
+      @include respond(mini) {
+        margin: 3rem;
+        height: 20rem;
+        width: 30rem;
+      }
+    }
+  }
+
+  .title {
+    margin: 0 0 3rem;
+    text-align: center;
+  }
+
+  .code-wrap-container {
+    font-size: calc($default-font-size * 1.4);
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+
+    @include respond(phone) {
+      padding-top: 1rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+      padding: 0;
+    }
+
+    .code-wrap {
+      color: var(--color-secondary);
+
+      &::before {
+        content: '<';
+        color: var(--color-primary);
+      }
+
+      &::after {
+        content: '>';
+        color: var(--color-primary);
+      }
+
+      span {
+        color: var(--color-primary);
+
+        span {
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+
+  .about--text {
+    font-size: calc($default-font-size * 1.4);
+    line-height: 1.4;
+    margin-left: 1rem !important;
+
+    span {
+      color: var(--color-primary);
+    }
+  }
+}

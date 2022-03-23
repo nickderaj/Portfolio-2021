@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  // --color-primary: #d58fdb;
+  // --color-primary-dark: #d167b5;
+  // --color-primary-darker: #c1509d;
+
+  --color-primary: #f1cb78;
+  --color-primary-dark: #dbb345;
+  --color-primary-darker: #ca9024;
+
+  --color-secondary: #b4c1d0;
+  --color-secondary-light: #dfe8f1;
+  --color-secondary-dark: #99a7c1;
+
+  --color-tertiary: #25252f;
+  --color-tertiary-light: #393c4f;
+  --color-tertiary-dark: #1e1e25;
+
+  --color-white: #f6f8f7;
+  --color-black: #111;
+
+  --color-forced-black: #111;
+}
+
+body[data-theme='light'] {
+  --color-primary: #003566;
+  --color-primary-dark: #003566;
+  --color-primary-darker: #003566;
+
+  --color-tertiary: #e6f8ff;
+  --color-tertiary-light: #fafeff;
+  --color-tertiary-dark: #cbe7f1;
+
+  --color-secondary: #1dabc4;
+  --color-secondary-light: #46c2d8;
+  --color-secondary-dark: #0c7b97;
+
+  --color-white: #111;
+  --color-black: #f6f8f7;
+}
+
+// SVG Links
+$link-size: 4rem;
+
+// FONT
+$default-font-size: 1.6rem;

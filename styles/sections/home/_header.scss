@@ -24,11 +24,23 @@
       box-sizing: content-box;
       border-radius: 50%;
       background: var(--color-tertiary-light);
+      border-top: 0.3rem solid var(--color-primary);
+      border-right: 0.3rem dashed var(--color-primary);
+      border-left: 0.3rem dashed var(--color-secondary);
+      border-bottom: 0.3rem solid var(--color-secondary);
+      animation: spin 10s infinite linear;
 
       span {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
         border-radius: 50%;
+        animation: spin 10s infinite reverse linear;
       }
     }
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
   }
 }

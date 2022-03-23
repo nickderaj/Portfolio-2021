@@ -33,9 +33,8 @@ export default function About() {
                 I&apos;m Nick - a nerd from Malaysia with a mix of passions including UI/UX design,
                 Game Development, Web3 and much more.
                 <br />
-                <br />
-                From creating custom maps on Warcraft 3 Map Editor when I was a kid to making fully
-                functional web-apps from the ground up, the passion to build has always been there.
+                <br />I can help you with anything from simple animated components to fully
+                responsive (mobile-friendly), functional web apps.
               </p>
               <p className="code-wrap">/p</p>
             </div>

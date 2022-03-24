@@ -8,6 +8,10 @@
     padding: 4rem 2rem;
   }
 
+  @include respond(mini) {
+    padding: 4rem 0;
+  }
+
   .title {
     text-align: center;
   }
@@ -25,13 +29,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-tertiary  );
+    background-color: var(--color-tertiary);
     border-radius: 2rem;
     width: 12rem;
     height: 12rem;
     margin: 1rem;
     padding: 2rem;
     transition: all 0.2s ease-in-out;
+
+    @include respond(mini) {
+      width: 9rem;
+      height: 9rem;
+    }
 
     &:hover {
       transform: scale(1.06);
@@ -42,6 +51,12 @@
       height: 6rem;
       width: 6rem;
       filter: invert(100%);
+
+      @include respond(mini) {
+        padding: 0;
+        width: 4rem;
+        height: 4rem;
+      }
     }
 
     &-text {
@@ -50,6 +65,10 @@
       margin: 0;
       text-transform: uppercase;
       text-align: center;
+
+      @include respond(mini) {
+        font-size: calc($default-font-size * 0.82);
+      }
     }
   }
 }

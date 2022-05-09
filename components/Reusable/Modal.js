@@ -26,7 +26,7 @@ export default function Modal({ showModal, setShowModal, project }) {
                     <p>{info}</p>
                     <div className="projects-modal-text-spacer">
                       <a href={url} target="_blank" rel="noopener noreferrer">
-                        View on Github
+                        View live Deployment
                       </a>
                     </div>
                   </div>

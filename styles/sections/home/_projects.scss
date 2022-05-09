@@ -112,11 +112,12 @@
         border-radius: 12px 12px 0 0;
         height: 20rem;
         width: 100%;
+        background: white;
 
         img {
           height: 20rem;
           width: 100%;
-          object-fit: cover;
+          object-fit: contain;
           overflow: contain;
           border-radius: 10px 10px 0 0;
         }
@@ -139,15 +140,14 @@
 
   &-image {
     width: 40rem;
+    background: white;
 
     @include respond(tab-land) {
-      height: 25rem;
-      width: 80%;
+      height: 30rem;
     }
 
     @include respond(phone) {
       height: 25rem;
-      width: 100%;
     }
 
     margin: 0 auto;

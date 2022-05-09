@@ -3,30 +3,29 @@ import ProjectCard from './ProjectCard';
 export default function Projects({ setShowModal, setCurrentProject }) {
   const projectList = [
     {
-      title: 'Nomad | E-Shop',
-      description:
-        'Front & Back-end built using Next.js, with Stripe Integration via API calls to make payments.',
-      info: 'A website listing & selling luxury bags built with Next.js and payments integrated using Stripe. Shopping cart is stored as React context as well as in local storage in case the user refreshes.',
-      src: '/images/projects/nomad.png',
-      languages: ['Next.js', 'Stripe', 'Sass'],
-      url: 'https://github.com/nickderaj/Nextjs-Stripe-Integrated-Shop',
+      title: '8SIAN | NFT Website',
+      description: 'Front-end development for one of the largest NFT Companies in South East Asia.',
+      info: 'Front-end development for one of the largest NFT Companies in South East Asia, built on Next.js & Tailwind based on Figma designs provided by their team.',
+      src: '/images/projects/8SIAN.png',
+      languages: ['Node.js', 'Stripe', 'Mongo.DB'],
+      url: 'https://8sian-demo.vercel.app/',
     },
     {
-      title: 'NFT Minting Dapp',
+      title: 'CREDS | Blockchain Licensing',
+      description:
+        'Front-end web development & design of a Blockchain Startup company based in London.',
+      info: 'Simple website created using Next.js & deployed with Docker/NGINX to Azure.',
+      src: '/images/projects/CREDS.png',
+      languages: ['Next.js', 'Stripe', 'Sass'],
+      url: 'https://creds-demo.vercel.app/',
+    },
+    {
+      title: 'Ghostcat | NFT Minting Dapp',
       description: 'Metamask connectivity connecting to the Ghost Cat NFT Smart Contract.',
       info: 'Simple minting Dapp that handles connectivity of a Metamask Ethereum wallet using the Ethers package as well as connecting and manipulating a Smart Contract to mint & handle whitelist features.',
-      src: '/images/projects/nft.png',
+      src: '/images/projects/GhostCat.gif',
       languages: ['React.js', 'Ethers', 'Docker'],
-      url: 'https://github.com/nickderaj/NFT-Minting-Dapp',
-    },
-    {
-      title: 'Natours | Tourism App',
-      description:
-        'Back-end development for a tourism company using Node.js, Express & MongoDB. Payments made via Stripe.',
-      info: 'Fully developped back and frontend created Node.js, Express, MongoDb and Pug templates. This Tourism App has CRUD features for the database, authentication and encryption for user details. Payments are handled via Stripe.',
-      src: '/images/projects/natours.png',
-      languages: ['Node.js', 'Stripe', 'Mongo.DB'],
-      url: 'https://github.com/nickderaj/Node-Natours-Project',
+      url: 'https://www.ghostcat.xyz/',
     },
   ];
 
@@ -34,7 +33,7 @@ export default function Projects({ setShowModal, setCurrentProject }) {
     <section id="projects">
       <h2 className="title">Recent Projects</h2>
       <p className="projects-github">
-        View more on Github:
+        Github:
         <a
           href="https://github.com/nickderaj"
           target="_blank"

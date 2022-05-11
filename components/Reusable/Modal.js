@@ -1,7 +1,7 @@
 import Portal from './Portal';
 
 export default function Modal({ showModal, setShowModal, project }) {
-  const { title, info, src, languages, url } = project ? project : '';
+  const { title, info, src, url } = project ? project : '';
   const closeModal = () => {
     setShowModal(false);
   };

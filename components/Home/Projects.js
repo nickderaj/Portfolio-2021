@@ -3,8 +3,9 @@ import ProjectCard from './ProjectCard';
 export default function Projects({ setShowModal, setCurrentProject }) {
   const projectList = [
     {
-      title: '8SIAN | NFT Website',
-      description: 'Front-end development for one of the largest NFT Companies in South East Asia.',
+      title: '8SIAN | NFT Website ( WIP )',
+      description:
+        'Front-end development for one of the largest NFT Companies in South East Asia. Still a work in progress & not optimised for mobile devices.',
       info: 'Front-end development for one of the largest NFT Companies in South East Asia, built on Next.js & Tailwind based on Figma designs provided by their team.',
       src: '/images/projects/8SIAN.png',
       languages: ['Node.js', 'Stripe', 'Mongo.DB'],

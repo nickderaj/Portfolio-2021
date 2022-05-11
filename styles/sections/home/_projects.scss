@@ -147,7 +147,8 @@
     }
 
     @include respond(phone) {
-      height: 25rem;
+      height: auto;
+      width: 50%;
     }
 
     margin: 0 auto;

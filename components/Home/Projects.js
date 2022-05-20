@@ -8,7 +8,7 @@ export default function Projects({ setShowModal, setCurrentProject }) {
         'Front-end development for one of the largest NFT Companies in South East Asia. Still a work in progress & not optimised for mobile devices.',
       info: 'Front-end development for one of the largest NFT Companies in South East Asia, built on Next.js & Tailwind based on Figma designs provided by their team.',
       src: '/images/projects/8SIAN.png',
-      languages: ['Node.js', 'Stripe', 'Mongo.DB'],
+      languages: ['Next.js', 'Tailwind', 'Sass'],
       url: 'https://8sian-demo.vercel.app/',
     },
     {
@@ -17,7 +17,7 @@ export default function Projects({ setShowModal, setCurrentProject }) {
         'Front-end web development & design of a Blockchain Startup company based in London.',
       info: 'Simple website created using Next.js & deployed with Docker/NGINX to Azure.',
       src: '/images/projects/CREDS.png',
-      languages: ['Next.js', 'Stripe', 'Sass'],
+      languages: ['Next.js', 'Azure', 'Sass'],
       url: 'https://creds-demo.vercel.app/',
     },
     {
